@@ -13,6 +13,8 @@ const TaskList = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [taskId, setTaskId] = useState("");
 
+  axios.defaults.withCredentials = true;
+
   const [formData, setformData] = useState({
     name : "",
     completed : false,
